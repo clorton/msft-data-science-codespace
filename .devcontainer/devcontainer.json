@@ -3,9 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
-        "ghcr.io/devcontainers/features/python:1": {
-            "version": "latest"
-        },
+        "ghcr.io/devcontainers/features/python:1": {},
         "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
             "vscodeRSupport": "full",
             "installDevTools": true,
@@ -13,10 +11,9 @@
             "installRMarkdown": true,
             "installVscDebugger": true
         },
-        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-            "packages": "r-cran-data.table,r-cran-tidyverse",
-            "upgradePackages": true
-        }
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+        "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {},
+        "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/rocker-org/devcontainer-features/r-apt"
