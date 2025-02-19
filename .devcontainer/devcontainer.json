@@ -12,7 +12,6 @@
             "installVscDebugger": true
         },
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
-        "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {},
         "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {}
     },
     "overrideFeatureInstallOrder": [
