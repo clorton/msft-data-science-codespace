@@ -3,7 +3,9 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
-        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "latest"
+        },
         "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
             "vscodeRSupport": "full",
             "installDevTools": true,
