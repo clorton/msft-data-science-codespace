@@ -4,7 +4,10 @@
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
         "ghcr.io/devcontainers/features/python:1": {
-            "version": "latest"
+            "version": "3.12",
+            "optimize": true,
+            "enableShared": true,
+            "installJupyterlab": true
         },
         "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
             "vscodeRSupport": "full",
@@ -14,7 +17,9 @@
             "installVscDebugger": true
         },
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
-        "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {}
+        "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {},
+        "ghcr.io/jsburckhardt/devcontainer-features/ruff:1": {},
+        "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/rocker-org/devcontainer-features/r-apt"
